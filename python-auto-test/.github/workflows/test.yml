@@ -9,13 +9,11 @@ on:
       -main
 
 jobs:
-  build:
-    name: Tests
-
+  test:
     runs-on: ubuntu-latest
-      defaults:
-        run:
-          working_directory: /python-auto-test
+    defaults:
+      run:
+        working-directory: ./python-auto-test
 
     steps:
     - name: Checkout code
